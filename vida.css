@@ -1,0 +1,27 @@
+.vida{position: relative;}
+
+.vida .vida-poster{
+   background-size: cover;
+   background-repeat: none;
+   background-position: center;}
+
+.vida .vida-poster,
+.vida .vida-status{
+   position: absolute;
+   top: 0; right: 0;
+   width: 100%; height: 100%;
+   cursor: pointer}
+
+.vida .vida-poster .vida-poster-icon{
+   display: table;
+   width: 100%; height: 100%}
+
+.vida .vida-poster .vida-poster-icon .vida-icon{
+   display: table-cell;
+   text-align: center}
+
+.vida .vida-status{}
+
+.vida .vida-video{
+   width: 100%; height: auto;
+   display: block}
