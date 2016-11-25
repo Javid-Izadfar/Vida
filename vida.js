@@ -28,6 +28,11 @@ function vida(element) {
       playPause()
    })
 
+   $('.vida-play-progressbar').on('click', function(event){
+      video.currentTime = ((event.pageX - $(this).offset().left) / $(this).outerWidth()) * duration;
+      updateProgress()
+   })
+
 }
 
 vida('#video1');
