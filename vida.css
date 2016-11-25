@@ -23,7 +23,7 @@
    position: absolute;
    right: 0; bottom: 0;
    width: 100%;
-   /*opacity: 0;*/
+   opacity: 0;
    background-color: rgba(0,0,0, 0.47);
    transition: 300ms all ease;}
 
@@ -38,6 +38,7 @@
 .vida .vida-controls .vida-play-icon{
    float: left;
    width: 10%;
+   position: relative;
    padding: 12px;
    text-align: center;
    cursor: pointer;
@@ -68,7 +69,9 @@
    float: left;
    text-align: left;
    padding: 6px 12px;
-   width: 70%}
+   width: 70%;
+   right: 20%;
+   position: relative;}
 
 .vida .vida-controls .vida-play-name p{
    margin: 0;
@@ -88,6 +91,8 @@
 .vida .vida-controls .vida-play-time{
    float: left;
    width: 20%;
+   left: 70%;
+   position: relative;
    padding: 16px 12px;
    font-size: 12px;
    direction: ltr;
@@ -97,3 +102,9 @@
    width: 100%; height: auto;
    display: block;
    cursor: pointer;}
+
+@media screen and (max-width: 991px) {
+   .vida .vida-controls .vida-play-icon{display: none}
+   .vida .vida-controls .vida-play-name{width: 60%;right: 40%;}
+   .vida .vida-controls .vida-play-time{width: 40%;left: 60%;}
+}
